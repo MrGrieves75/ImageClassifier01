@@ -15,7 +15,10 @@ class ImageClassifier extends NeuralNetwork
     //Methodes
     loadImage()
     {
-        this.imagePath = random(this.imagesPath);
+        let randomPath = random(this.imagesPath);
+        while(this.imagePath == randomPath)
+            randomPath = random(this.imagesPath);
+        this.imagePath = randomPath;
         this.currentImage = loadImage(this.imagePath);
     }
 
