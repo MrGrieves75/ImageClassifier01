@@ -12,8 +12,8 @@ function setup() {
   imageClassifier = new ImageClassifier(200, undefined, 400, 500, imagesPath);
   imageClassifier.createNeuralNetwork(3, 5 , 2);
   imageClassifier.randomOutput();
-  imageClassifier.setOneOutputNeuronLabel("OUI", 0);
-  imageClassifier.setOneOutputNeuronLabel("NON", 1);
+  imageClassifier.setOneOutputNeuronLabel("CHAT", 0);
+  imageClassifier.setOneOutputNeuronLabel("CHIEN", 1);
   
 }
 
